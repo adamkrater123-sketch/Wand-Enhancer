@@ -185,10 +185,7 @@
             <MainAssembly>$(OutputPath)$(AssemblyName).exe</MainAssembly>
         </PropertyGroup>
 
-        <ItemGroup>
-        <AssemblyList Include="$(OutputPath)*.dll" />
-        </ItemGroup>
-
+       
         <PropertyGroup>
             <DllList>@(AssemblyList->'%(FullPath)', ' ')</DllList>
         </PropertyGroup>
